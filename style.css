@@ -1,0 +1,84 @@
+body {
+    font-family:  'Quicksand', monospace;
+    background-color: whitesmoke;
+    align-items: center;
+    overscroll-behavior: none;
+}
+.main { margin: 2em;
+    padding: 1em;
+    text-align: center;
+    }
+
+
+h1 {font-size: 2em;}
+
+.mode {
+    margin-top: 2em;
+    font-style: italic;
+    font-size: 1.2em;
+    text-shadow: 2px 1px 5px #848484;
+
+}
+#power-saving-status {font-size: 1.5em;}
+
+#temperature {
+    display: inline;
+    text-align: center;
+    padding: 0.2em;
+    margin: 1em;  
+    font-size: 3em;
+    text-shadow: 2px 1px 5px #848484;
+}
+
+button {
+    cursor: pointer;
+    font-family: monospace;
+    background-color: white;
+    border-radius: 10%;
+    font-size: 1.2rem; 
+    padding: 0.3em;
+    margin: 0.3em;
+    box-shadow: 2px 1px 8px #848484;
+}
+
+#temperature-up {font-size: 2em; padding: 5px 13px}
+#temperature-down {font-size: 2em; padding: 5px 13px}
+#temperature-reset {font-size: 1.2em; padding: 1px 12px;margin-top: 20px;}
+#mode-switcher {margin-top: 1em; font-size: 1em; border-radius: 50%; padding: 22px 5px;}
+
+.low-usage {
+    color: green;
+  }
+  
+  .medium-usage {
+    color: black;
+  }
+  
+  .high-usage {
+    color: darkred;
+  }
+
+  footer {
+    font-size: 0.8em;
+    height: 2em;
+    /* position: relative; */
+    bottom: 0;
+    max-width: 70%;
+    border-top: 1px dotted black;
+    padding-top: 3px;
+    margin: 1em auto;
+  }
+  #f2 {
+    float: right;
+    bottom: 0; right: 0;
+}
+a  {
+    text-decoration: none;
+    color: purple;
+    padding: 3px 0;
+    border-bottom: 1px dashed;
+    }
+  
+    a:hover {
+      border-bottom: 1px solid;
+    }

@@ -2,7 +2,7 @@
 <hr>
  
 #### The idea
-A thermostat app made with JavaScript.
+A thermostat app made with JavaScript & JQuery
 
 ##### Specification
 
@@ -21,19 +21,24 @@ A thermostat app made with JavaScript.
 
 JavaScript, with the help of Jasmine
 
-##### Test
-`git clone [...]`, and open SpecRunner.html in a browser
+##### View
+
+<img src="thermostat.png" width="300">
 
 ##### Run
 
-_tba_
+`git clone` this repo, and open index.html in a browser
+
+##### Test
+
+open SpecRunner.html in a browser
 
 ##### Notes
-This was week 5 @ Makers Academy: <br>
+Week 5 @ Makers Academy: <br>
 JavaScript : learn a new language and its patterns
 
 
 #### Collaborators
-[Myrtle](https://github.com/Mrtly), [Jason](https://github.com/jasylwong)
+[Myrtle](https://github.com/Mrtly), [Jason](https://github.com/jasylwong), [Emily](https://github.com/EWright212)
 
-<!-- Thank you guys! :) -->
+Thank you guys! :)
