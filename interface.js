@@ -1,11 +1,12 @@
 function updateTemperature() {
     $('#temperature').text(thermostat.temperature);
+    $('#temperature').append('°'); // the cool stuff eh
     $('#temperature').attr('class', thermostat.usage_indicator());
   }
   
   $(document).ready(function() {
     var thermostat = new Thermostat();
-    updateTemperature()  })
+    updateTemperature() })
 
   $('#temperature-up').on('click', function() {  
     thermostat.increase_temp();  

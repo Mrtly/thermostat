@@ -1,10 +1,18 @@
+html { font-size: 20px;}
 body {
     font-family:  'Quicksand', monospace;
     background-color: whitesmoke;
     align-items: center;
     overscroll-behavior: none;
+    color: #37323E;
+    height: 100vh;
 }
-.main { margin: 2em;
+
+:focus {
+    outline: 0;
+  }
+
+.main { margin: 1em;
     padding: 1em;
     text-align: center;
     }
@@ -26,8 +34,8 @@ h1 {font-size: 2em;}
     text-align: center;
     padding: 0.2em;
     margin: 1em;  
-    font-size: 3em;
-    text-shadow: 2px 1px 5px #848484;
+    font-size: 4em;
+    text-shadow: 2px 1px 10px #C2C4B6;
 }
 
 button {
@@ -38,35 +46,29 @@ button {
     font-size: 1.2rem; 
     padding: 0.3em;
     margin: 0.3em;
-    box-shadow: 2px 1px 8px #848484;
+    box-shadow: 2px 1px 12px #C2C4B6;
 }
 
-#temperature-up {font-size: 2em; padding: 5px 13px}
-#temperature-down {font-size: 2em; padding: 5px 13px}
-#temperature-reset {font-size: 1.2em; padding: 1px 12px;margin-top: 20px;}
-#mode-switcher {margin-top: 1em; font-size: 1em; border-radius: 50%; padding: 22px 5px;}
+#temperature-up {font-size: 2em; padding: 5px 15px}
+#temperature-down {font-size: 2em; padding: 5px 15px}
+#temperature-reset {color: #6D6A75; border-radius: 0%; font-size: 0.8em; padding: 5px 10px;margin-top: 20px;}
+#mode-switcher {color: #6D6A75; margin-top: 1em; font-size: 0.6em; border-radius: 50%; padding: 15px 6px;}
 
-.low-usage {
-    color: green;
-  }
-  
-  .medium-usage {
-    color: black;
-  }
-  
-  .high-usage {
-    color: darkred;
-  }
+.low-usage {color: green;}
+.medium-usage {color: #37323E;}
+.high-usage {color: #A53547;}
 
   footer {
     font-size: 0.8em;
     height: 2em;
     /* position: relative; */
     bottom: 0;
-    max-width: 70%;
-    border-top: 1px dotted black;
+    max-width: 80%;
+    border-top: 1px dotted #6D6A75;
     padding-top: 3px;
-    margin: 1em auto;
+    margin: 0 auto;
+    color:#607EA5;
+
   }
   #f2 {
     float: right;
@@ -74,7 +76,7 @@ button {
 }
 a  {
     text-decoration: none;
-    color: purple;
+    color: #DBA91E;
     padding: 3px 0;
     border-bottom: 1px dashed;
     }
@@ -82,3 +84,29 @@ a  {
     a:hover {
       border-bottom: 1px solid;
     }
+
+    .explain {
+        display: inline-block;
+        border-top: 1px #6D6A75 dotted;
+        margin-top: 4em;
+        color:#6D6A75;
+        font-size: 0.7em;
+    }
+
+    @media only screen and (max-device-width: 360px) {
+    html {
+        height: 100vh;
+        font-size: 46px;
+        padding-top: 4em;
+    }
+    footer {font-size: 0.7em;}
+
+    .explain {
+        display: inherit ;
+        margin-top:2em;}
+
+#temperature-up {padding: 5px 25px}
+#temperature-down {padding: 5px 25px}
+#mode-switcher {padding: 27px 10px;}
+
+}

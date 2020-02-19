@@ -21,6 +21,10 @@ A thermostat app made with JavaScript & JQuery
 
 JavaScript, with the help of Jasmine
 
+##### Visit
+
+_[thermos.netlify.com](https://thermos.netlify.com/)_
+
 ##### View
 
 <img src="thermostat.png" width="300">
