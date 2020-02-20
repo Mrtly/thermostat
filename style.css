@@ -27,6 +27,7 @@ h1 {font-size: 2em;}
     text-shadow: 2px 1px 5px #848484;
 
 }
+.mode{color:#6D6A75;}
 #power-saving-status {font-size: 1.5em;}
 
 #temperature {
@@ -53,15 +54,15 @@ button {
 #temperature-down {font-size: 2em; padding: 5px 15px}
 #temperature-reset {color: #6D6A75; border-radius: 0%; font-size: 0.8em; padding: 5px 10px;margin-top: 20px;}
 #mode-switcher {color: #6D6A75; margin-top: 1em; font-size: 0.6em; border-radius: 50%; padding: 15px 6px;}
+#check-london{font-family: geneva;color:#6D6A75;font-size: 0.8em;padding:2px;border-radius: 0%; align-self: center;}
 
 .low-usage {color: green;}
-.medium-usage {color: #37323E;}
+.medium-usage {color: #607EA5;}
 .high-usage {color: #A53547;}
 
   footer {
     font-size: 0.8em;
     height: 2em;
-    /* position: relative; */
     bottom: 0;
     max-width: 80%;
     border-top: 1px dotted #6D6A75;
@@ -92,21 +93,40 @@ a  {
         color:#6D6A75;
         font-size: 0.7em;
     }
+    .london {
+        border: 1px dotted grey;
+        padding: 0.1em 0.5em;
+        display: inline;
+        font-size: 0.7em;
+        margin: 0 auto;
+        position: absolute;
+        color:#6D6A75;
+    }
+    #current-london{font-size: 1.6em}
 
-    @media only screen and (max-device-width: 360px) {
+    @media only screen and (max-device-width: 414px) {
     html {
         height: 100vh;
         font-size: 46px;
         padding-top: 4em;
     }
-    footer {font-size: 0.7em;}
+    .main { margin: 0.5em;
+        padding: 0.5em;}
 
-    .explain {
-        display: inherit ;
-        margin-top:2em;}
+    .explain {margin-top:2em;}
 
-#temperature-up {padding: 5px 25px}
-#temperature-down {padding: 5px 25px}
+    footer {    max-width: 90%;
+    }
+
+#temperature-up {padding: 5px 29px}
+#temperature-down {padding: 5px 29px}
 #mode-switcher {padding: 27px 10px;}
 
+.london {
+    font-size: 0.6em;
+    margin-left:0.5em;
+margin-top: 3em;}
 }
+}
+
+/* -------- */

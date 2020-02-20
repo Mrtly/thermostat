@@ -11,6 +11,9 @@ function Thermostat() {
   
   Thermostat.prototype.mode_switcher = function() {
     this.power_saving_mode = (this.power_saving_mode ? false : true); 
+
+  if (this.power_saving_mode === true && this.current_temp() > 25){
+  this.temperature = 25; }
   }
   
   Thermostat.prototype.reset = function() {
@@ -23,14 +26,14 @@ function Thermostat() {
   
   Thermostat.prototype.increase_temp = function() {
     if ( this.power_saving_mode === true) {
-      if (this.current_temp() < this.max_temp) { this.temperature++ };
+      if (this.current_temp() < this.max_temp) { this.temperature++ }
     } else {
-      if (this.current_temp() < this.max_temp_mode_off) { this.temperature++ };
+      if (this.current_temp() < this.max_temp_mode_off) { this.temperature++ }
     }
   }
   
   Thermostat.prototype.decrease_temp = function() {
-    if (this.current_temp() > this.min_temp) { this.temperature-- };
+    if (this.current_temp() > this.min_temp) { this.temperature-- }
   }
   
   Thermostat.prototype.usage_indicator = function() {
@@ -40,7 +43,7 @@ function Thermostat() {
       return 'low-usage';
     } else {
       return 'high-usage';
-    };
+    }
   };
   
   console.log(thermostat.current_temp());

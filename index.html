@@ -6,8 +6,18 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
   </head>
   <body>
+    
+      <section class="london">
+        <h3>London, GB</h3>
+        <h4>temperature: <span id="current-london"></span></h4>
+        <h4>feels like: <span id="current-london-feels_like"></span></h4>
+        <h4>humidity: <span id="current-london-humidity"></span></h4>
+          
+        <button id="check-london">refresh</button>
+        </section>
+
     <section class="main">
-      <h1 id="temperature">lalala</h1>
+      <h1 id="temperature"></h1>
       <p> <div class="mainbtns">
         <button id="temperature-up">+</button>
         <button id="temperature-down">-</button>
@@ -15,7 +25,9 @@
       </div>
         <div class="mode"> 
         power saving mode* is <span id="power-saving-status">on</span>
-        <br><button id="mode-switcher">switch<br>mode</button>
+        <br>
+        <button id="mode-switcher">switch<br>mode</button>
+       
       </div>
         <div class="explain">
             *Power saving mode max temprature | on: 25° | off: 32°
@@ -23,8 +35,9 @@
 
       </p>
     </section>
+    
     <footer>
-      JavaScript & JQuery project
+      Thermostat: JavaScript & JQuery project
       <br>week 5 @ <a href="https://makers.tech/hire" target="_blank">Makers Academy</a>
       <div id="f2"> made by <a href="https://github.com/Mrtly" target="_blank">Mrtly</a> </div>
     </footer>

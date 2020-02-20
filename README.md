@@ -2,7 +2,8 @@
 <hr>
  
 #### The idea
-A thermostat app made with JavaScript & JQuery
+A thermostat web app made with JavaScript & JQuery.<br>
+It calls on the Open Weather API and shows the current weather in London.
 
 ##### Specification
 
@@ -15,11 +16,11 @@ A thermostat app made with JavaScript & JQuery
 - [x] Power saving mode is on by default
 - [x] You can reset the temperature to 20 with a reset function
 - [x] You can ask about the thermostat's current energy usage: < 18 is low-usage, < 25 is medium-usage, anything else is high-usage.
-   
+- [x] You can see the current weather in London.
 
 #### Built with
 
-JavaScript, with the help of Jasmine
+JavaScript, with the help of Jasmine, and OpenWeather Weather API
 
 ##### Visit
 
@@ -35,7 +36,7 @@ _[thermos.netlify.com](https://thermos.netlify.com/)_
 
 ##### Test
 
-open SpecRunner.html in a browser
+open SpecRunner.html in a browser to see Jasmine's results
 
 ##### Notes
 Week 5 @ Makers Academy: <br>
