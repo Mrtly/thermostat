@@ -35,7 +35,7 @@ updateTemperature()})
 
   
   function updateLondon(){
-    $.get('http://api.openweathermap.org/data/2.5/weather?q=London&appid=a3d9eb01d4de82b9b8d0849ef604dbed&units=metric', function(data) {
+    $.get('https://api.openweathermap.org/data/2.5/weather?q=London&appid=a3d9eb01d4de82b9b8d0849ef604dbed&units=metric', function(data) {
     $('#current-london').text(data.main.temp);
     $('#current-london').append('°'); // the cool stuff eh
     $('#current-london-humidity').text(data.main.humidity);
