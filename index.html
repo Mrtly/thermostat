@@ -6,17 +6,12 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
   </head>
   <body>
-    
-      <section class="london">
-        <h3>London, GB</h3>
-        <h4>temperature: <span id="current-london"></span></h4>
-        <h4>feels like: <span id="current-london-feels_like"></span></h4>
-        <h4>humidity: <span id="current-london-humidity"></span></h4>
-          
-        <button id="check-london">refresh</button>
-        </section>
-
-    <section class="main">
+    <div class="main">
+        <section class="london">
+            <h4>temperature in London now: <span id="current-london"></span></h4>
+             <!-- <button id="check-london">refresh</button> -->
+          </section>
+          <section>
       <h1 id="temperature"></h1>
       <p> <div class="mainbtns">
         <button id="temperature-up">+</button>
@@ -34,7 +29,7 @@
         </div>
 
       </p>
-    </section>
+    </section></div>
     
     <footer>
       Thermostat: JavaScript & JQuery project

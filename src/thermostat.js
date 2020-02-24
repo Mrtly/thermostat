@@ -46,4 +46,3 @@ function Thermostat() {
     }
   };
   
-  console.log(thermostat.current_temp());

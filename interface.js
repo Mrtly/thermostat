@@ -1,6 +1,6 @@
 function updateTemperature() {
     $('#temperature').text(thermostat.temperature);
-    $('#temperature').append('°'); // the cool stuff eh
+    $('#temperature').append('°C'); // the cool stuff eh
     $('#temperature').attr('class', thermostat.usage_indicator());
   }
   
@@ -37,7 +37,7 @@ updateTemperature()})
   function updateLondon(){
     $.get('https://api.openweathermap.org/data/2.5/weather?q=London&appid=a3d9eb01d4de82b9b8d0849ef604dbed&units=metric', function(data) {
     $('#current-london').text(data.main.temp);
-    $('#current-london').append('°'); // the cool stuff eh
+    $('#current-london').append('°C'); // the cool stuff eh
     $('#current-london-humidity').text(data.main.humidity);
     $('#current-london-feels_like').text(data.main.feels_like);
   
@@ -49,3 +49,4 @@ updateTemperature()})
 $('#check-london').on('click', function() {
   updateLondon()
 })
+

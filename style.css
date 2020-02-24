@@ -1,33 +1,35 @@
 html { font-size: 20px;}
+:focus {outline: 0;}
+
 body {
     font-family:  'Quicksand', monospace;
-    background-color: whitesmoke;
+    background-image: url(london.jpg);
+    /* image source: https://www.deviantart.com/calimer00/art/View-from-a-bridge-2-646647939 */
+    background-repeat: no-repeat;
+    background-size: cover;
     align-items: center;
     overscroll-behavior: none;
-    color: #37323E;
+    color: gainsboro;
     height: 100vh;
+    align-items: center;
 }
-
-:focus {
-    outline: 0;
-  }
-
-.main { margin: 1em;
-    padding: 1em;
-    text-align: center;
-    }
-
 
 h1 {font-size: 2em;}
 
+.main { 
+    display: grid;
+    margin: 1em auto;
+    text-align: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);
+    max-width: 60%;
+    }
+ 
 .mode {
     margin-top: 2em;
     font-style: italic;
     font-size: 1.2em;
-    text-shadow: 2px 1px 5px #848484;
+    color: gainsboro;}
 
-}
-.mode{color:#6D6A75;}
 #power-saving-status {font-size: 1.5em;}
 
 #temperature {
@@ -36,18 +38,16 @@ h1 {font-size: 2em;}
     padding: 0.2em;
     margin: 1em;  
     font-size: 4em;
-    text-shadow: 2px 1px 10px #C2C4B6;
 }
 
 button {
     cursor: pointer;
     font-family: monospace;
-    background-color: white;
+    background-color: whitesmoke;
     border-radius: 10%;
     font-size: 1.2rem; 
     padding: 0.3em;
     margin: 0.3em;
-    box-shadow: 2px 1px 12px #C2C4B6;
 }
 
 #temperature-up {font-size: 2em; padding: 5px 15px}
@@ -56,28 +56,29 @@ button {
 #mode-switcher {color: #6D6A75; margin-top: 1em; font-size: 0.6em; border-radius: 50%; padding: 15px 6px;}
 #check-london{font-family: geneva;color:#6D6A75;font-size: 0.8em;padding:2px;border-radius: 0%; align-self: center;}
 
-.low-usage {color: green;}
-.medium-usage {color: #607EA5;}
-.high-usage {color: #A53547;}
+.low-usage {color: rgb(58, 211, 58);}
+.medium-usage {color: whitesmoke;}
+.high-usage {color: rgb(246, 87, 87);}
 
-  footer {
+footer {
     font-size: 0.8em;
-    height: 2em;
+    height: 3em;
     bottom: 0;
     max-width: 80%;
-    border-top: 1px dotted #6D6A75;
-    padding-top: 3px;
+    border-top: 1px dotted gainsboro;
+    padding: 3px 5px;
     margin: 0 auto;
-    color:#607EA5;
+    color: gainsboro;
+    box-shadow: inset 0 0 0 1000px rgba(50, 50, 50, 0.7);
 
-  }
-  #f2 {
+}
+#f2 {
     float: right;
     bottom: 0; right: 0;
 }
 a  {
     text-decoration: none;
-    color: #DBA91E;
+    color: #FFF577;
     padding: 3px 0;
     border-bottom: 1px dashed;
     }
@@ -88,45 +89,42 @@ a  {
 
     .explain {
         display: inline-block;
-        border-top: 1px #6D6A75 dotted;
+        border-top: 1px gainsboro dotted;
         margin-top: 4em;
-        color:#6D6A75;
-        font-size: 0.7em;
+        color: gainsboro;
+        font-size: 0.8em;
     }
-    .london {
-        border: 1px dotted grey;
-        padding: 0.1em 0.5em;
-        display: inline;
-        font-size: 0.7em;
-        margin: 0 auto;
-        position: absolute;
-        color:#6D6A75;
-    }
+    .london { 
+        padding:0.5em;
+        display: flex;
+        font-size: 0.8em;
+        color: gainsboro;    }
     #current-london{font-size: 1.6em}
 
-    @media only screen and (max-device-width: 414px) {
+@media only screen and (max-device-width: 414px) {
     html {
         height: 100vh;
         font-size: 46px;
-        padding-top: 4em;
+        padding-top: 3em;
     }
     .main { margin: 0.5em;
-        padding: 0.5em;}
+        padding: 0.5em;
+    max-width: 100%}
 
-    .explain {margin-top:2em;}
+    .explain {margin-top:2em; font-size: 0.7em;}
 
     footer {    max-width: 90%;
     }
 
-#temperature-up {padding: 5px 29px}
-#temperature-down {padding: 5px 29px}
-#mode-switcher {padding: 27px 10px;}
+    #temperature-up {padding: 5px 29px}
+    #temperature-down {padding: 5px 29px}
+    #mode-switcher {padding: 27px 10px;}
 
-.london {
-    font-size: 0.6em;
-    margin-left:0.5em;
-margin-top: 3em;}
+    .london {
+        font-size: 0.7em;
+        margin-left:0.5em;
+        margin-top: 1em;}
+    }
 }
-}
-
 /* -------- */
+
